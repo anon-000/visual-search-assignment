@@ -1,4 +1,4 @@
-# Image Similarity Search
+# Visual Similarity Search using ANN
 
 Visual product similarity search system. Upload a product image and find the top 3 most similar products from the catalog using CLIP embeddings and pgvector.
 
@@ -17,13 +17,13 @@ Visual product similarity search system. Upload a product image and find the top
                      └──────────────┘     └──────────────────┘
 ```
 
-| Service    | Description                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| **frontend** | Next.js + Tailwind CSS single-page UI                          |
-| **api**      | FastAPI backend with REST endpoints                            |
+| Service      | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| **frontend** | Next.js + Tailwind CSS single-page UI                              |
+| **api**      | FastAPI backend with REST endpoints                                |
 | **worker**   | RQ background worker — downloads images, generates CLIP embeddings |
 | **db**       | PostgreSQL 16 with pgvector extension for vector similarity search |
-| **redis**    | Message broker for RQ task queue                               |
+| **redis**    | Message broker for RQ task queue                                   |
 
 ## Tech Stack
 
@@ -59,12 +59,12 @@ docker compose up --build
 
 ## API Endpoints
 
-| Method | Path               | Description                                          |
-| ------ | ------------------ | ---------------------------------------------------- |
+| Method | Path               | Description                                               |
+| ------ | ------------------ | --------------------------------------------------------- |
 | POST   | `/tasks/ingest`    | Start background ingestion. Body: `{"source_url": "..."}` |
-| GET    | `/tasks/{task_id}` | Poll task progress (status, processed/total counts)  |
-| GET    | `/products`        | List products. Query params: `skip`, `limit`, `category` |
-| POST   | `/search`          | Upload an image file, returns top 3 similar products |
+| GET    | `/tasks/{task_id}` | Poll task progress (status, processed/total counts)       |
+| GET    | `/products`        | List products. Query params: `skip`, `limit`, `category`  |
+| POST   | `/search`          | Upload an image file, returns top 3 similar products      |
 
 ## How Search Works
 
