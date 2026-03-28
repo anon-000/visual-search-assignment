@@ -78,6 +78,8 @@ docker compose up --build
 
 ## Screenshots
 <img width="1470" height="956" alt="Screenshot 2026-03-29 at 12 23 17 AM" src="https://github.com/user-attachments/assets/e4061477-87b5-4119-9cdc-ed8a4a4daf99" />
+<img width="1470" height="956" alt="Screenshot 2026-03-29 at 12 32 37 AM" src="https://github.com/user-attachments/assets/8326a484-2d91-47a1-b404-22b577257abf" />
+<img width="1470" height="956" alt="Screenshot 2026-03-29 at 12 33 29 AM" src="https://github.com/user-attachments/assets/4904f9d9-c432-4aff-9ee0-b69b52bd93bc" />
 
 
 ## Project Structure
