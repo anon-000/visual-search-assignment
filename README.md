@@ -74,6 +74,12 @@ docker compose up --build
 4. A **category-based reranking** boost (+0.05 similarity) is applied to products matching the dominant category among the top results
 5. The **top 3** products are returned with match scores and the matched image URL
 
+
+
+## Screenshots
+<img width="1470" height="956" alt="Screenshot 2026-03-29 at 12 23 17 AM" src="https://github.com/user-attachments/assets/e4061477-87b5-4119-9cdc-ed8a4a4daf99" />
+
+
 ## Project Structure
 
 ```
