@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Image Similarity Search",
+  title: "Visual Similarity Search",
   description: "Find similar products by image",
 };
 
